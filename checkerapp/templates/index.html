@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:skyblue">
+<form action="/checkerapp/checkerpost/" method=post>
+	{% csrf_token %}
+	enter the passwords with space between each password:<input type=text name=pass><br>
+
+	<input type=submit>
+</form>
+
+<hr>
+
+<h3 style="background-color:blue"> {{posts}} </h3>
+</body>
+</html>
